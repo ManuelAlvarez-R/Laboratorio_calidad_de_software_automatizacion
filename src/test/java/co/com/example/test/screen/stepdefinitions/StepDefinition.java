@@ -16,4 +16,8 @@ public class StepDefinition {
 
     @Given("This method is responsible for parameterizing the instantiation of chromedriver")    public void thisMethodIsResponsibleForParameterizingTheInstantiationOfChromedriver() {         OnStage.theActorInTheSpotlight().wasAbleTo(Open.browserOn().thePageNamed("pages.swaglabsUrl"));    }
 
+    @Given("I am a new user")
+    public void iAmANewUser() {
+        throw new io.cucumber.java.PendingException();
+    }
 }
