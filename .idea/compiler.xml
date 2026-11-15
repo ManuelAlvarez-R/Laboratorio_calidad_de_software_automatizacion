@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/Downloads/gradle-8.14.7-all/gradle-8.14.7/bin/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="Taller_modulo_Shopping.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Laboratorio" target="17" />
+      <module name="Laboratorio.main" target="17" />
+      <module name="Laboratorio.test" target="17" />
+      <module name="Screenplay_architecture" target="17" />
+      <module name="Screenplay_architecture.main" target="17" />
+      <module name="Screenplay_architecture.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
