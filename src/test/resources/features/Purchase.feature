@@ -1,10 +1,16 @@
 Feature:  As a store customer I want to buy products So that I can use them
 
 
-Scenario: Adding a product to the cart
+Scenario outline: Adding a product to the cart
  Given I am a customer who has already entered the store
  When I add a product that interests me
  Then the product is in the shopping cart
+
+  Examples:
+    | product                 |
+    | Blue Top                |
+    | Men Tshirt              |
+    | Stylish Dress           |
 
 Scenario: Confirming the purchase order
  Given I am a customer who has already entered the store
