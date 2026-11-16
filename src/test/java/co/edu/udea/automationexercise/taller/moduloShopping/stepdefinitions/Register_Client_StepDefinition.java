@@ -1,25 +1,32 @@
 package co.edu.udea.automationexercise.taller.moduloShopping.stepdefinitions;
+import co.edu.udea.automationexercise.taller.moduloShopping.tasks.OpenThe;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.annotations.Managed;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.openqa.selenium.WebDriver;
 
 public class Register_Client_StepDefinition {
 
+    public final Actor Buyer = Actor.named("Jane");
+    @Managed(driver = "chrome", uniqueSession = true)
+    public WebDriver BrowsingDriver;
+
     @Before
     public void config(){
-        OnStage.setTheStage(new OnlineCast());
-        OnStage.theActorCalled("user");
+        Buyer.can(BrowseTheWeb.with(BrowsingDriver));
     }
-
 
     // Scenario: Arriving at the store
     @Given("I am a new user")
     public void iAmANewUser() {
-        throw new io.cucumber.java.PendingException();
+        Buyer.attemptsTo(OpenThe.Browser());
     }
 
     @When("I open the Automation Exercise store")

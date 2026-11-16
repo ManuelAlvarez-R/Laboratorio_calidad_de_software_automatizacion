@@ -8,9 +8,9 @@ import net.serenitybdd.screenplay.actions.Open;
 public class OpenThe implements Task{
     @Override
     public <T extends Actor> void performAs(T actor) {
-          actor.attemptsTo(Open.browserOn().thePageNamed("pages.AutomationExerciseMainPage"));
+          actor.attemptsTo(Open.browserOn().thePageNamed("pages.Google"));
     }
-    public static OpenThe page(){
+    public static OpenThe Browser(){
         return Tasks.instrumented(OpenThe.class);
     }
 }
