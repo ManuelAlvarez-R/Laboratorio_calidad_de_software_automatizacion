@@ -6,15 +6,14 @@ Scenario: Arriving at the store
  Then I see the home page
  And I see the option to sign up
 
-Scenario outline: Successful registration
- Given I am a new user on the store home page
- When I register my details using a new email address
- Then I see the successful registration message
-
+Scenario Outline: Successful registration
+  Given I am a new user on the store home page
+  When I register "<name>" with email "<email>"
+  Then I see the successful registration message
   Examples:
-    | name | email                    |
-    | Ana  | ana.qa.001@test.com      |
-    | Luis | luis.qa.002@test.com     |
+    | name | email               |
+    | Ana  | ana.qa.001@test.com |
+    | Luis | luis.qa.002@test.com|
 
 Scenario: Registration with an email address that already exists
  Given I am a user on the store home page
