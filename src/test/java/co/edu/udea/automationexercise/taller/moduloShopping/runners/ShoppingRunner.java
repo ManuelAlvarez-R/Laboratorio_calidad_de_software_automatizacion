@@ -1,4 +1,4 @@
-package co.edu.udea.automationexercise.taller.moduloShopping.runner;
+package co.edu.udea.automationexercise.taller.moduloShopping.runners;
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
@@ -9,4 +9,4 @@ import org.junit.runner.RunWith;
         glue = "co.edu.udea.automationexercise.taller.moduloShopping.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class Runner {}
+public class ShoppingRunner {}
